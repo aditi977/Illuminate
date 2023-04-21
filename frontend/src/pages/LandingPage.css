@@ -1,0 +1,38 @@
+.main-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* margin-left: 130px;
+    margin-right: 595px; */
+    margin-top: 5em;
+}
+
+.main-text-content{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .hero-image{
+    position: absolute;
+    left: 746px;
+    top: 147px;
+} */
+
+.cta-btn{
+    background-color: var(--primary-color);
+    font-family: 'Poppins';
+    /* font-style: normal; */
+    font-weight: 700;
+    font-size: 27.5px;
+    /* line-height: 41px; */
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    width: 276px;
+    margin-top: 32px;
+    border-radius: 20px;
+
+}
