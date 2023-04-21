@@ -4,14 +4,14 @@ import './LandingPage.css';
 import largeText from './largeText.png';
 import heroImage from './heroImage.png';
 
-export default function LandingPage() {
+export default function Home() {
     return (
       <>
         <Header/>
         <div className='main-content'>
         <div className='main-text-content'>
         <img src={largeText} width='555px'/>
-        <a href="#" className='cta-btn'>Get Started</a>
+        <a href="/signup" className='cta-btn'>Get Started</a>
         </div>
 
         <div className='hero-image'>

@@ -9,9 +9,9 @@ export default function Header() {
             </div>
             <div className='menu-container'>
                 <ul className='menu'>
-                    <li><a href='#'>Search</a></li>
-                    <li><a href='#'>Login</a></li>
-                    <li><a href='#'>Join for Free</a></li>
+                    <li><a href='/'>Search</a></li>
+                    <li><a href='/'>Login</a></li>
+                    <li><a href='/signup'>Join for Free</a></li>
                 </ul>
             </div>
         </div>
