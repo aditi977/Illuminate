@@ -1,3 +1,11 @@
+.header{
+    width: 100%;
+    display: block;
+    align-items: baseline;
+    padding: 1.5em;
+    /* margin-bottom: 2em; */
+}
+
 .menu{
     list-style: none;
     display: flex;
@@ -30,10 +38,3 @@
 }
 
 
-.header{
-    width: 100%;
-    display: block;
-    align-items: baseline;
-    padding: 1.5em;
-    /* margin-bottom: 2em; */
-}

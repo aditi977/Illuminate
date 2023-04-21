@@ -16,6 +16,7 @@ a {
   margin: 0;
   box-sizing: border-box;
   font-size: var(--body-text-size);
+  color: var(--primary-text-color);
 }
 
 
