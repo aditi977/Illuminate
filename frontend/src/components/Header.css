@@ -1,0 +1,43 @@
+.menu{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    float: right;
+    
+}
+
+/* .menu-container, .logo {
+    vertical-align: top;
+}
+  */
+
+.logo{
+    position: absolute;
+    top: 1em;
+    left: 1em;
+
+  }
+
+.menu > * {
+    margin-left: 32px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+.menu a:hover{
+    transition: color 100ms ease-in;
+    color: var(--secondary-text-color);
+}
+
+
+.header{
+    width: 100%;
+    display: block;
+    align-items: baseline;
+    padding: 1.5em;
+    /* margin-bottom: 2em; */
+}
