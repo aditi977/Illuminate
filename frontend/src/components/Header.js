@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <div className='header'>
             <div className='logo'>
-                <a href="#"><img src={logo} height={'66px'}/></a>
+                <a href="/"><img src={logo} height={'66px'}/></a>
             </div>
             <div className='menu-container'>
                 <ul className='menu'>
