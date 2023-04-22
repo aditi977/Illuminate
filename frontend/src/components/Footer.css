@@ -1,0 +1,66 @@
+footer {
+    /* background: var(--secondary-background-color);*/
+    background: var(--primary-color-dark);
+    position: fixed;
+    bottom: 0;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+   
+  }
+  .footer-main-frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.9em;
+  }
+  
+  .signup-and-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+  }
+  .social-media-icons {
+    display: flex;
+    flex-direction: row;
+    font-size: 27px;
+    font-weight: bolder;
+    align-items: right;
+    text-align: right;
+    gap: 0.6em;
+    color: white;
+  }
+  
+  .about-links {
+    font-size: 15px;
+    color: white;
+  }
+  
+  .address-part {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    text-align: right;
+    padding-left: 24px;
+  }
+  
+  .copy-rights-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: right;
+    gap: 0.5em;
+    font-size: 15px;
+    color: white;
+    padding-right: 10px;
+  }
+a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+a:hover{
+    transition: color 100ms ease-in;
+    color: var(--secondary-text-color);
+}
