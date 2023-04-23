@@ -17,6 +17,8 @@ a {
   box-sizing: border-box;
   font-size: var(--body-text-size);
   color: var(--primary-text-color);
+  color: var(--primary-text-color);
+  border: none;
 }
 
 
