@@ -63,7 +63,7 @@ footer {
     text-decoration: none;
     color: var(--primary-text-color);
 } */
-footer a:hover{
+.links > a:hover{
     transition: color 100ms ease-in;
     color: var(--secondary-text-color);
 }
