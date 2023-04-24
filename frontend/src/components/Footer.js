@@ -15,7 +15,7 @@ export default function Footer() {
               <i className="fa-brands fa-instagram"></i></a>
           </section>
         </div>
-        <section className="copy-rights-bar">Copyright@2023 Illuminate,Inc</section>
+        <section className="copy-rights-bar">Copyright @2023 Illuminate, Inc</section>
        
 
        
