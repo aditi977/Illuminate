@@ -3,6 +3,7 @@ import logo from './logo.png'
 
 export default function Header() {
     return (
+        // TODO: return different header based on isLoggedIn prop passed into component
         <div className='header'>
             <div className='logo'>
                 <a href="/"><img src={logo} height={'66px'}/></a>

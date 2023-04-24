@@ -1,14 +1,43 @@
 :root {
   --bg-color: #1E1E1E;
-  --secondary-text-color: #BD79FF;
-  --primary-color: #BD79FF;
   --primary-text-color: #FFF;
+  --secondary-text-color: #BD79FF;
+  --tertiary-text-color: #49DA85;
+  --primary-color: #BD79FF;
+  
   --body-text-size: 20;
 }
 
 a {
   text-decoration: none;
   color: var(--primary-text-color);
+}
+
+.cta-btn{
+  background-color: var(--primary-color);
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 27.5px;
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+  width: 276px;
+  margin-top: 32px;
+  border-radius: 20px;
+
+}
+
+.btn {
+  background-color: var(--primary-color);
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 27.5px;
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+  width: 276px;
+  margin-top: 32px;
+  border-radius: 20px;
 }
 
 
