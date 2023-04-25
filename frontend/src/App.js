@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={ <LandingPage/> } />
         <Route path="signup" element={ <SignUp/> } />
-        <Route path="welcome" element={<Welcome/>} />
+        <Route path="welcome" element={<Welcome isLoggedIn={true}/>} />
       </Routes>
       
     </div>

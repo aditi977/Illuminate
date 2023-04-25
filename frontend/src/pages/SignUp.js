@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 export default function SignUp() {
     return (
         <>
-            <Header />
+            <Header isLoggedIn={false}/>
             <div className='sign-up-container'>
                 <div className='sign-up'>
 

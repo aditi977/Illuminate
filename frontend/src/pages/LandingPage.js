@@ -7,7 +7,7 @@ import heroImage from './heroImage.png';
 export default function Home() {
     return (
       <>
-        <Header/>
+        <Header isLoggedIn={false}/>
         <div className='main-content'>
         <div className='main-text-content'>
         <img src={largeText} width='555px'/>

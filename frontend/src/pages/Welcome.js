@@ -8,7 +8,7 @@ import welcomeTwo from './welcome2.png';
 import welcomeThree from './welcome3.png';
 import TextImage from '../components/TextImage';
 
-export default function Welcome() {
+export default function Welcome({isLoggedIn}) {
     const textImageContent = [
         {image: welcomeOne,
         subtitle: 'Share your learning objectives',
@@ -33,7 +33,7 @@ export default function Welcome() {
 
     return (
         <>
-            <Header />
+            <Header isLoggedIn={isLoggedIn}/>
             <div className='welcome-content'>
                 {/* TODO: add function that on click - closes modal */}
                 <div className='close-btn-container'>

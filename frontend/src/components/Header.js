@@ -1,20 +1,41 @@
 import './Header.css'
 import logo from './logo.png'
 
-export default function Header() {
-    return (
-        // TODO: return different header based on isLoggedIn prop passed into component
-        <div className='header'>
-            <div className='logo'>
-                <a href="/"><img src={logo} height={'66px'}/></a>
+export default function Header({isLoggedIn}) {
+    if(isLoggedIn){
+        return (
+            // TODO: return different header based on isLoggedIn prop passed into component
+            <div className='header'>
+                <div className='logo'>
+                    <a href="/"><img src={logo} height={'66px'}/></a>
+                </div>
+                <div className='menu-container'>
+                    <ul className='menu'>
+                        <p>This is logged in</p>
+                        {/* <li><a href='/'>Search</a></li>
+                        <li><a href='/'>Login</a></li>
+                        <li><a href='/signup'>Join for Free</a></li> */}
+                    </ul>
+                </div>
             </div>
-            <div className='menu-container'>
-                <ul className='menu'>
-                    <li><a href='/'>Search</a></li>
-                    <li><a href='/'>Login</a></li>
-                    <li><a href='/signup'>Join for Free</a></li>
-                </ul>
+        )
+    } else {
+        return (
+            // TODO: return different header based on isLoggedIn prop passed into component
+            <div className='header'>
+                <div className='logo'>
+                    <a href="/"><img src={logo} height={'66px'}/></a>
+                </div>
+                <div className='menu-container'>
+                    <ul className='menu'>
+                        
+                        <li><a href='/'>Search</a></li>
+                        <li><a href='/'>Login</a></li>
+                        <li><a href='/signup'>Join for Free</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    )
+        )
+    }
+    
   }
