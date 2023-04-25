@@ -18,8 +18,8 @@ export default function Home() {
           <img src={heroImage} width='444px'/>
         </div>
         </div>
+        <div className='footer-container'> <Footer/> </div>
         
-        <Footer/>
       </>
     )
   }
