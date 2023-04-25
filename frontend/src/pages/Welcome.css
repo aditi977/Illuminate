@@ -7,7 +7,7 @@
 }
 .welcome-content {
     padding: 2em;
-    margin: 5em;
+    margin: 5em 8em;
     border-radius: 20px;
     background: rgba(38, 50, 56, 0.37);
     text-align: center;
@@ -50,5 +50,5 @@
 
 .welcome-textimg-ungrouped > * {
     vertical-align: top;
-    margin: 1em;
+    margin: 1em 2em;
 }
