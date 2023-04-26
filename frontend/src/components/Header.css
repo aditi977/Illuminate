@@ -1,3 +1,8 @@
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .header{
     width: 100%;
     display: block;
@@ -6,7 +11,7 @@
     /* margin-bottom: 2em; */
 }
 
-.menu{
+.menu {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -15,26 +20,44 @@
     
 }
 
+.avatar {
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    background-color: var(--secondary-text-color);
+    text-align: center;
+}
+
+.avatar img {
+    max-height: 28px;
+    max-width: 31px;
+}
+
 /* .menu-container, .logo {
     vertical-align: top;
 }
   */
 
-.logo{
+.logo {
     position: absolute;
     top: 1em;
     left: 1em;
-
   }
+
+  .logo img {
+    max-height: 31px;
+  }
+
+.menu {
+    margin-left: 5em;
+}
 
 .menu > * {
     margin-left: 32px;
 }
 
 
-.menu a:hover{
+.menu > * a:hover, .menu > * span:hover{
     transition: color 100ms ease-in;
     color: var(--secondary-text-color);
 }
-
-
