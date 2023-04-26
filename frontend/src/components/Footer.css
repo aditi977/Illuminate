@@ -5,12 +5,13 @@ footer {
     flex-direction: column;
     gap: 1em;
 
-    position: fixed;
+    /* position: fixed;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0; */
    
   }
+  
   .footer-main-frame {
     display: flex;
     flex-direction: row;

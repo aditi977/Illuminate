@@ -9,14 +9,14 @@ export default function Home() {
       <>
         <Header isLoggedIn={false}/>
         <div className='main-content'>
-        <div className='main-text-content'>
-        <img src={largeText} width='555px'/>
-        <a href="/signup" className='cta-btn'>Get Started</a>
-        </div>
+          <div className='main-text-content'>
+          <img src={largeText} />
+          <a href="/signup" className='cta-btn'>Get Started</a>
+          </div>
 
-        <div className='hero-image'>
-          <img src={heroImage} width='444px'/>
-        </div>
+          <div className='hero-image'>
+            <img src={heroImage}/>
+          </div>
         </div>
         <Footer/>
         
