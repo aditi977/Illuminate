@@ -5,7 +5,7 @@
   --tertiary-text-color: #49DA85;
   --primary-color: #BD79FF;
   
-  --body-text-size: 20;
+  --body-text-size: 1em;
 }
 
 a {
@@ -41,14 +41,16 @@ a {
 }
 
 
+
+
 * {
   margin: 0;
   box-sizing: border-box;
   font-size: var(--body-text-size);
   color: var(--primary-text-color);
-  color: var(--primary-text-color);
   border: none;
 }
+
 
 
 body {
