@@ -1,0 +1,13 @@
+.close-btn-container {
+    position: relative;
+    float: right;
+    cursor: pointer;
+
+}
+.form-container {
+    padding: 2em;
+    margin: 5em 8em;
+    border-radius: 20px;
+    background: rgba(38, 50, 56, 0.37);
+    text-align: center;
+}

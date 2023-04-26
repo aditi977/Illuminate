@@ -34,7 +34,7 @@ export default function Welcome({isLoggedIn}) {
     return (
         <>
             <Header isLoggedIn={isLoggedIn}/>
-            <div className='welcome-content'>
+            <div className='form-container'>
                 {/* TODO: add function that on click - closes modal */}
                 <div className='close-btn-container'>
                     <span><img src={close} /></span>

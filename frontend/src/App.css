@@ -24,7 +24,7 @@ a {
   width: 276px;
   margin-top: 32px;
   border-radius: 20px;
-
+  cursor: pointer;
 }
 
 .btn {
@@ -38,7 +38,22 @@ a {
   width: 276px;
   margin-top: 32px;
   border-radius: 20px;
+  cursor: pointer;
 }
+
+.small-btn {
+  background-color: var(--primary-color);
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 25px;
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+  width: 166px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 
 
 
