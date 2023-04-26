@@ -18,15 +18,18 @@
 
 .subtitle-container {
     margin-top: 1em;
-    padding: 1em;
+    padding: 5px;
+    vertical-align: center;
+    height: 70px;
     border-radius: 20px;
     background: rgba(38, 50, 56, 0.37);
     text-align: center;
+    align-items: center;
 
 }
 
 .subtitle-container h2 {
-    font-size: 1.25em;
+    font-size: 20px;
     font-weight: 500;
     color: var(--secondary-text-color);
 }
