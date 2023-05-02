@@ -119,7 +119,7 @@ border-radius: 10px;
     height: 50px;
     left: 880px;
     top: 350px;
-    padding: 10px;
+    padding: 5px;
     background: #1E1E1E;
     border-radius: 10px;
 }
@@ -183,6 +183,30 @@ border-radius: 10px;
     padding: 10px;
     background: #1E1E1E;
     border-radius: 10px;
+}
+.q5_option1{
+    position: absolute;
+width: 250px;
+height: 50px;
+left: 426px;
+top: 510px;
+padding: 10px;
+background: #1E1E1E;
+border-radius: 10px;
+}
+.q5_option2{
+    position: absolute;
+width: 250px;
+height: 50px;
+left: 778px;
+top: 510px;
+padding: 10px;
+background: #1E1E1E;
+border-radius: 10px;
+}
+.question4{
+    padding-left: 120px;
+    padding-right: 120px;
 }
 .continue-button{
     position: absolute;
