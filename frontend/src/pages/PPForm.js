@@ -194,8 +194,43 @@ export default function PPForm() {
             <Button onClick={handleNext}>
               {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
             </Button> */}
+             </Box>
+            
+           
+            
+            {activeStep + 1 === 1 ? (
+  <React.Fragment>
+     <div class="welcome-subtitle">What brings you to illuminate?</div>
+    <div className="q1_option1">A. To learn real life implementation of skills</div>
+    <div className="q1_option2">B. Unsure of what to expect from your new job role</div>
+    <div className="q1_option3">C. Looking for a switch</div>
+    <div className="q1_option4">D. In search of guidance</div>
+  </React.Fragment>
+) : activeStep + 1 === 2 ? (
+  <React.Fragment>
+      <div class="welcome-subtitle">Where are you in your career right now?</div>
+  <div className="q2_option1">A. Entry level ( 0-2 years)</div>
+  <div className="q2_option2">B. Mid Level (3-9 years)</div>
+  <div className="q2_option3">C. Senior Level (10+ years)</div>
+    
+    
+  </React.Fragment>
+) : activeStep +1 ===3? (
+  <React.Fragment>
+     <div class="welcome-subtitle">Where are you in your career right now?</div>
+     <div className="q1_option1">A. To learn a new skill</div>
+    <div className="q1_option2">B. To gain practical experience</div>
+    <div className="q1_option3">C. To explore new career opportunities</div>
+    <div className="q1_option4">D. To network with industry professionals</div>
+  
+</React.Fragment>
+):
+(<p>nothing</p>)}
+
+
+            <div class="continue-button">
             <button className='small-btn' onClick={handleNext}>Continue</button>
-          </Box>
+            </div>
         </React.Fragment>
       )}
     </div>
