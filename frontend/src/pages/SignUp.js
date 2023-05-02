@@ -24,7 +24,7 @@ export default function SignUp() {
                             <input type="password" placeholder="  Re-enter new Password" name="psw-repeat" required />
 
                             <div>
-                                <button type="submit" class="signupbtn">Submit</button>
+                               <a href="/welcome" class="signupbtn">Submit</a>
                             </div>
                     </form>
                 {/* </div> */}

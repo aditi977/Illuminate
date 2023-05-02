@@ -41,7 +41,7 @@ export default function Welcome({isLoggedIn}) {
                 </div>
                 <h1 className='welcome-title'>Hi, Welcome to Illuminate</h1>
                 <h2 className='welcome-subtitle'>Achieve your goals with a path designed just for you.</h2>
-                <a href='/welcome' className='btn'>Let's go!</a>
+                <a href='/form' className='btn'>Let's go!</a>
                 <div className='welcome-img-grouped'>
                     <img className='' src={welcomeGrouped} />
                 </div>
