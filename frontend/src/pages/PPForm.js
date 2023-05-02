@@ -217,12 +217,18 @@ export default function PPForm() {
   </React.Fragment>
 ) : activeStep +1 ===3? (
   <React.Fragment>
-     <div class="welcome-subtitle">Where are you in your career right now?</div>
-     <div className="q1_option1">A. To learn a new skill</div>
-    <div className="q1_option2">B. To gain practical experience</div>
-    <div className="q1_option3">C. To explore new career opportunities</div>
-    <div className="q1_option4">D. To network with industry professionals</div>
-  
+     <div class="welcome-subtitle">What would you like to learn?</div>
+     <section class="question3">
+     <div className="q3_option1">A. Back-end development</div>
+    <div className="q3_option2">B. Front-end development</div>
+    <div className="q3_option3">C. Programming Language</div>
+    <div className="q3_option4">D. Mobile Application Development</div>
+    <div className="q3_option5">E. Machine Learning</div>
+    <div className="q3_option6">F. Big data management</div>
+    <div className="q3_option7">G. DevOps</div>
+    <div className="q3_option8">H. System Design</div>
+    <div className="q3_option9">I. User Centered Design</div>
+    </section>
 </React.Fragment>
 ):
 (<p>nothing</p>)}
