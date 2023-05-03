@@ -13,7 +13,7 @@ import close from './close.png';
 import './PPForm.css';
 import Header from '../components/Header';
 
-const steps = ['', '', '', '', ''];
+const steps = ['', '', '', '', '','',''];
 
 const CustomConnector = styled(StepConnector)(({ theme }) => ({
   [`&.${stepConnectorClasses.alternativeLabel}`]: {
@@ -262,6 +262,44 @@ export default function PPForm() {
     <div className="q5_option1">A. Yes</div>
     <div className="q5_option2">B. No</div>
     
+    
+  </React.Fragment>
+)
+:activeStep +1 ===6?
+(
+  <React.Fragment>
+    <section div class="question4">
+    <div class="welcome-subtitle">
+    You’re almost done. To build your personalized plan, we need to know a little more about you. 
+    What do you intend to achieve from this learning plan?
+      </div>
+    </section>
+
+    <div className="q6_option1">A. Learn the essentials of Spring and Spring Boot so that you can make back-end web applications.</div>
+    <div className="q6_option2">B. Build stand-alone applications that efficiently manage data handling and storage.</div>
+    <div className="q6_option3">C. Learn to separate cross-cutting concerns while making modular applications</div>
+    <div className="q6_option4">D. Learn Java web development using the Model-View-Controller design pattern.</div>
+    <div className="q6_option5">E. Learn to test Spring and Spring Boot.</div>
+    <div className="q6_option6">F. Learn to build production-ready applications efficiency.</div>
+    <div className="q6_option7">G. Become a Spring Boot master who can develop production-ready applications as quickly as possible.</div>
+    
+    
+  </React.Fragment>
+)
+:activeStep +1 ===7?
+(
+  <React.Fragment>
+    <section div class="question7">
+    <div class="welcome-subtitle">
+    Set a weekly learning goal.
+      </div>
+    </section>
+
+    <div className="q7_option1">A. Light Schedule
+ 2 Hours per week</div>
+    <div className="q7_option2">B. Regular Schedule
+4 Hours per week</div>
+    <div className="q7_option3">C. Active Schedule 8 Hours per week</div>
     
   </React.Fragment>
 )
