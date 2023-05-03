@@ -16,8 +16,14 @@
 
 .hero-image img {
     padding-top: 10px;
-    min-width: 60%;
+    min-width: 50%;
     max-width: 80%;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .main-text-content{
@@ -25,6 +31,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-width: 50%;
+    max-width: 50%;
     
 }
 
@@ -48,3 +56,10 @@
 
 } */
 
+/* TODO: standardize across screen sizes */
+
+@media only screen and (max-width: 600px){
+    .main-content{
+        flex-wrap: wrap;
+    }
+}

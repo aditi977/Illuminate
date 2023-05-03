@@ -4,14 +4,15 @@
     cursor: pointer;
 
 }
-.form-container {
+.ppform-container {
     padding: 2em;
     margin: 5em 8em;
     border-radius: 20px;
     background: rgba(38, 50, 56, 0.37);
     text-align: center;
-    height: 600px;
+    height: 800px;
 }
+
 .welcome-subtitle {
     color: var(--tertiary-text-color);
     font-size: 1.5em;
@@ -316,9 +317,12 @@ border-radius: 10px;
     
 }
 .continue-button{
-    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
     /* width: 175px; */
     /* height: 35px; */
-    left: 640px;
-    top: 617px;
+    /* left: 640px;
+    top: 617px; */
+    justify-content: flex-end;
 }

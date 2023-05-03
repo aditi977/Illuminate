@@ -5,7 +5,15 @@
   --tertiary-text-color: #49DA85;
   --primary-color: #BD79FF;
   
-  --body-text-size: 1em;
+  --body-text-size: 16px;
+}
+
+/* TODO: standardize across screen sizes */
+@media only screen and (max-width: 600px){
+:root{
+  --body-text-size: 10px;
+}
+
 }
 
 a {
@@ -17,7 +25,7 @@ a {
   background-color: var(--primary-color);
   font-family: 'Poppins';
   font-weight: 700;
-  font-size: 27.5px;
+  font-size: calc(var(--body-text-size)*1.5);
   align-items: center;
   text-align: center;
   display: inline-block;
@@ -53,9 +61,6 @@ a {
   border-radius: 10px;
   cursor: pointer;
 }
-
-
-
 
 
 * {

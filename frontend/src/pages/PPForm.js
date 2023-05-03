@@ -139,7 +139,7 @@ export default function PPForm() {
   return (
     <>
     <Header isLoggedIn={true}/>
-    <div className='form-container'>
+    <div className='ppform-container'>
       <div className='close-btn-container'>
           <span><img src={close} /></span>
       </div>
