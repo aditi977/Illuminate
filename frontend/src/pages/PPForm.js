@@ -141,7 +141,7 @@ export default function PPForm() {
     <Header isLoggedIn={true}/>
     <div className='ppform-container'>
       <div className='close-btn-container'>
-          <span><img src={close} /></span>
+          <span><a href="/"><img src={close} /></a></span>
       </div>
       <Stepper alternativeLabel connector={<CustomConnector />} activeStep={activeStep}>
         {steps.map((label, index) => {

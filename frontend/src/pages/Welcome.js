@@ -37,7 +37,7 @@ export default function Welcome({isLoggedIn}) {
             <div className='form-container'>
                 {/* TODO: add function that on click - closes modal */}
                 <div className='close-btn-container'>
-                    <span><img src={close} /></span>
+                    <span><a href="/"><img src={close} /></a></span>
                 </div>
                 <h1 className='welcome-title'>Hi, Welcome to Illuminate</h1>
                 <h2 className='welcome-subtitle'>Achieve your goals with a path designed just for you.</h2>
