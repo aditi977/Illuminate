@@ -8,6 +8,7 @@ import welcomeTwo from './welcome2.png';
 import welcomeThree from './welcome3.png';
 import TextImage from '../components/TextImage';
 
+//welcome page of the website
 export default function Welcome({isLoggedIn}) {
     const textImageContent = [
         {image: welcomeOne,
@@ -35,7 +36,7 @@ export default function Welcome({isLoggedIn}) {
         <>
             <Header isLoggedIn={isLoggedIn}/>
             <div className='form-container'>
-                {/* TODO: add function that on click - closes modal */}
+                {/*  add function that on click - closes modal */}
                 <div className='close-btn-container'>
                     <span><a href="/"><img src={close} /></a></span>
                 </div>
@@ -49,7 +50,7 @@ export default function Welcome({isLoggedIn}) {
                 <div className='welcome-textimg-ungrouped'>
                     {textImageComponents}
                 </div>
-                {/* TODO: change link for button */}
+                {/* change link for button */}
 
             </div>
             <Footer />

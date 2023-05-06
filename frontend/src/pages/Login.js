@@ -3,7 +3,7 @@ import './SignUp.css';
 import arrow from './arrow.png';
 import pictureGrid from './pictureGrid.png';
 import Footer from "../components/Footer";
-
+//signup form for new users
 export default function SignUp() {
     return (
         <>

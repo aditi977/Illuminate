@@ -4,9 +4,11 @@ import './LandingPage.css';
 import largeText from './largeText.png';
 import heroImage from './heroImage.png';
 
+// Define the Home function component
 export default function Home() {
     return (
       <>
+      {/* Render the Header component */}
         <Header isLoggedIn={false}/>
         <div className='main-content'>
           <div className='main-text-content'>

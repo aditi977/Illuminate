@@ -5,7 +5,7 @@ import Dropdown from './Dropdown'
 export default function Header({ isLoggedIn }) {
     if (isLoggedIn) {
         return (
-            // TODO: return different header based on isLoggedIn prop passed into component
+            //  return different header based on isLoggedIn prop passed into component
             <div className='header'>
                 <div className='logo'>
                     <a href="/"><img src={logo} /></a>
@@ -27,7 +27,7 @@ export default function Header({ isLoggedIn }) {
         )
     } else {
         return (
-            // TODO: return different header based on isLoggedIn prop passed into component
+            //  return different header based on isLoggedIn prop passed into component
             <div className='header'>
                 <div className='logo'>
                     <a href="/"><img src={logo} height={'66px'} /></a>
