@@ -1,13 +1,13 @@
 # Illuminate
 Team Name - Muggles
 
-##Team Members- 
- *Aditi Diwan<aditid@vt.edu>
- *Apoorva Srivastava<apoorva22@vt.edu>
- *Ayush Roy <ayushroy24@vt.edu >
- *Varshita Usem <varshitau@vt.edu >
+Team Members- 
+ *Aditi Diwan<aditid@vt.edu>*
+ *Apoorva Srivastava<apoorva22@vt.edu>*
+ *Ayush Roy <ayushroy24@vt.edu >*
+ *Varshita Usem <varshitau@vt.edu >*
  
-##Project Description
+Project Description
 
 Illuminate is an e-learning platform for working professionals who can learn on the job. Illuminate guides you from start to finish.  
 
