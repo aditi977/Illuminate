@@ -326,3 +326,13 @@ border-radius: 10px;
     top: 617px; */
     justify-content: flex-end;
 }
+/* [class^='q']:hover, [class*='q']:hover {
+    outline: 1px solid var(--primary-text-color);
+    cursor:pointer;
+} */
+
+.navigation-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
