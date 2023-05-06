@@ -36,7 +36,7 @@ export default function Header({ isLoggedIn }) {
                     <ul className='menu'>
 
                         <li><a href='/'>Browse</a></li>
-                        <li><a href='/'>Login</a></li>
+                        <li><a href='/login'>Login</a></li>
                         <li><a href='/signup'>Join for Free</a></li>
                     </ul>
                 </div>
