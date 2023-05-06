@@ -7,7 +7,7 @@ Team Name - Muggles
  *Ayush Roy <ayushroy24@vt.edu >
  *Varshita Usem <varshitau@vt.edu >
  
-##Project Description-
+##Project Description
 
 Illuminate is an e-learning platform for working professionals who can learn on the job. Illuminate guides you from start to finish.  
 
