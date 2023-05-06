@@ -2,18 +2,19 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import { styled } from '@mui/material/styles';
-import Stack from '@mui/material/Stack';
+// import Stack from '@mui/material/Stack';
 import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 // import Check from '@mui/icons-material/Check';
 import StepConnector, { stepConnectorClasses } from '@mui/material/StepConnector';
-import {Typography, Box} from '@mui/material';
+import { Typography } from '@mui/material';
 import close from './close.png';
 import './PPForm.css';
 import Header from '../components/Header';
+import { useNavigate } from "react-router-dom";
 
-const steps = ['', '', '', '', '','',''];
+const steps = ['', '', '', '', '', '', ''];
 
 const CustomConnector = styled(StepConnector)(({ theme }) => ({
   [`&.${stepConnectorClasses.alternativeLabel}`]: {
@@ -37,7 +38,7 @@ const CustomConnector = styled(StepConnector)(({ theme }) => ({
     borderBottomWidth: 0,
     borderRadius: 1,
     borderStyle: 'dotted',
-    
+
   },
 }));
 
@@ -68,7 +69,7 @@ function CustomStepIcon(props) {
   return (
     <CustomStepIconRoot ownerState={{ active }} className={className}>
       {completed ? (
-        <div className="CustomStepIcon-circle" style={{backgroundColor: 'var(--secondary-text-color)'}} />
+        <div className="CustomStepIcon-circle" style={{ backgroundColor: 'var(--secondary-text-color)' }} />
       ) : (
         <div className="CustomStepIcon-circle" />
       )}
@@ -92,226 +93,185 @@ CustomStepIcon.propTypes = {
 
 export default function PPForm() {
   const [activeStep, setActiveStep] = React.useState(0);
-  const [skipped, setSkipped] = React.useState(new Set());
-
-  const isStepOptional = (step) => {
-    return step === 1;
-  };
-
-  const isStepSkipped = (step) => {
-    return skipped.has(step);
-  };
-
+  let navigate = useNavigate();
   const handleNext = () => {
-    let newSkipped = skipped;
-    if (isStepSkipped(activeStep)) {
-      newSkipped = new Set(newSkipped.values());
-      newSkipped.delete(activeStep);
-    }
-
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
-    setSkipped(newSkipped);
+
   };
 
   const handleBack = () => {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
 
-  // const handleSkip = () => {
-  //   if (!isStepOptional(activeStep)) {
-  //     // You probably want to guard against something like this,
-  //     // it should never occur unless someone's actively trying to break something.
-  //     throw new Error("You can't skip a step that isn't optional.");
-  //   }
-
-  //   setActiveStep((prevActiveStep) => prevActiveStep + 1);
-  //   setSkipped((prevSkipped) => {
-  //     const newSkipped = new Set(prevSkipped.values());
-  //     newSkipped.add(activeStep);
-  //     return newSkipped;
-  //   });
-  // };
-
-  const handleReset = () => {
+  const handleGeneratePath = () => {
     setActiveStep(0);
+    let path = `/welcome`; 
+      navigate(path);
   };
 
   return (
     <>
-    <Header isLoggedIn={true}/>
-    <div className='ppform-container'>
-      <div className='close-btn-container'>
+      <Header isLoggedIn={true} />
+      <div className='ppform-container'>
+        <div className='close-btn-container'>
           <span><a href="/"><img src={close} /></a></span>
-      </div>
-      <Stepper alternativeLabel connector={<CustomConnector />} activeStep={activeStep}>
-        {steps.map((label, index) => {
-          const stepProps = {};
-          const labelProps = {};
-          // if (isStepOptional(index)) {
-          //   labelProps.optional = (
-          //     <Typography variant="caption">Optional</Typography>
-          //   );
-          // }
-          if (isStepSkipped(index)) {
-            stepProps.completed = false;
-          }
-          return (
-            <Step  key={label} {...stepProps}>
-              <StepLabel StepIconComponent={CustomStepIcon} {...labelProps}>{label}</StepLabel>
-            </Step>
-          );
-        })}
-      </Stepper>
-      {activeStep === steps.length ? (
-        <React.Fragment>
-          <Typography sx={{ mt: 2, mb: 1 }}>
-            All steps completed - you&apos;re finished
-          </Typography>
-          <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
-            <Box sx={{ flex: '1 1 auto' }} />
-            <button className='small-btn' onClick={handleReset}>Reset</button>
-          </Box>
-        </React.Fragment>
-      ) : (
-        <React.Fragment>
-          <Typography sx={{ mt: 2, mb: 1 }}>Step {activeStep + 1}</Typography>
-          <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
-            {/* <Button
+        </div>
+        <Stepper alternativeLabel connector={<CustomConnector />} activeStep={activeStep}>
+          {steps.map((label, index) => {
+            const stepProps = {};
+            const labelProps = {};
+            return (
+              <Step key={label} {...stepProps}>
+                <StepLabel StepIconComponent={CustomStepIcon} {...labelProps}>{label}</StepLabel>
+              </Step>
+            );
+          })}
+        </Stepper>
+        {/* If last step, render only back and generate path button, otherwise render back and next */}
+        {activeStep === steps.length - 1 ? (
+          <>
+            <h2 className='welcome-subtitle'>Done bro</h2>
+            <button className='small-btn'
               color="inherit"
               disabled={activeStep === 0}
               onClick={handleBack}
               sx={{ mr: 1 }}
             >
               Back
-            </Button>
-            <Box sx={{ flex: '1 1 auto' }} />
-            {isStepOptional(activeStep) && (
-              <Button color="inherit" onClick={handleSkip} sx={{ mr: 1 }}>
-                Skip
-              </Button>
-            )}
+            </button>
 
-            <Button onClick={handleNext}>
-              {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
-            </Button> */}
-             </Box>
-            
-           
-            
-            {activeStep + 1 === 1 ? (
-  <React.Fragment>
-     <div class="welcome-subtitle">What brings you to illuminate?</div>
-    <div className="q1_option1">A. To learn real life implementation of skills</div>
-    <div className="q1_option2">B. Unsure of what to expect from your new job role</div>
-    <div className="q1_option3">C. Looking for a switch</div>
-    <div className="q1_option4">D. In search of guidance</div>
-  </React.Fragment>
-) : activeStep + 1 === 2 ? (
-  <React.Fragment>
-      <div class="welcome-subtitle">Where are you in your career right now?</div>
-  <div className="q2_option1">A. Entry level ( 0-2 years)</div>
-  <div className="q2_option2">B. Mid Level (3-9 years)</div>
-  <div className="q2_option3">C. Senior Level (10+ years)</div>
-    
-    
-  </React.Fragment>
-) : activeStep +1 ===3? (
-  <React.Fragment>
-
-     <div class="welcome-subtitle">What would you like to learn?</div>
-  
-     <div className="q3_option1">A. Back-end development</div>
-    <div className="q3_option2">B. Front-end development</div>
-    <div className="q3_option3">C. Mobile Application Development</div>
-    <div className="q3_option4">D. Programming Language</div>
-    <div className="q3_option5">E. Machine Learning</div>
-    <div className="q3_option6">F. Big data management</div>
-    <div className="q3_option7">G. DevOps</div>
-    <div className="q3_option8">H. System Design</div>
-    <div className="q3_option9">I. User Centered Design</div>
-  
-</React.Fragment>
-): activeStep +1 ===4?
-(
-  <React.Fragment>
-    <section div class="question4">
-    <div class="welcome-subtitle">
-      Back-end frameworks help build the back-end structure of a website. Which framework would you like to learn?
-      </div>
-    </section>
-      <div className="q3_option4">A. Spring Boot</div>
-    <div className="q3_option5">B. Flask</div>
-    <div className="q3_option6">C. Django</div>
-    <div className="q3_option7">D. Node.js</div>
-    <div className="q3_option8">H. PHP</div>
-    <div className="q3_option9">I. Ruby on Rails</div>
-    
-    
-  </React.Fragment>)
-:activeStep +1 ===5?
-(
-  <React.Fragment>
-    <section div class="question4">
-    <div class="welcome-subtitle">
-    Spring Boot is a Java framework for creating production-grade applications and services. 
-    Therefore, it is essential to have a good grip of Java to understand the concepts of Spring Boot.
-     Would you like a Java refresher before starting Spring Boot?
-      </div>
-    </section>
-
-    <div className="q5_option1">A. Yes</div>
-    <div className="q5_option2">B. No</div>
-    
-    
-  </React.Fragment>
-)
-:activeStep +1 ===6?
-(
-  <React.Fragment>
-    <section div class="question4">
-    <div class="welcome-subtitle">
-    You’re almost done. To build your personalized plan, we need to know a little more about you. 
-    What do you intend to achieve from this learning plan?
-      </div>
-    </section>
-
-    <div className="q6_option1">A. Learn the essentials of Spring and Spring Boot so that you can make back-end web applications.</div>
-    <div className="q6_option2">B. Build stand-alone applications that efficiently manage data handling and storage.</div>
-    <div className="q6_option3">C. Learn to separate cross-cutting concerns while making modular applications</div>
-    <div className="q6_option4">D. Learn Java web development using the Model-View-Controller design pattern.</div>
-    <div className="q6_option5">E. Learn to test Spring and Spring Boot.</div>
-    <div className="q6_option6">F. Learn to build production-ready applications efficiency.</div>
-    <div className="q6_option7">G. Become a Spring Boot master who can develop production-ready applications as quickly as possible.</div>
-    
-    
-  </React.Fragment>
-)
-:activeStep +1 ===7?
-(
-  <React.Fragment>
-    <section div class="question7">
-    <div class="welcome-subtitle">
-    Set a weekly learning goal.
-      </div>
-    </section>
-
-    <div className="q7_option1">A. Light Schedule
- 2 Hours per week</div>
-    <div className="q7_option2">B. Regular Schedule
-4 Hours per week</div>
-    <div className="q7_option3">C. Active Schedule 8 Hours per week</div>
-    
-  </React.Fragment>
-)
-:(<p>nothing</p>)
-}
-
-
-            <div class="continue-button">
-            <button className='small-btn' onClick={handleNext}>Continue</button>
+            <div>
+              <button className='small-btn' onClick={handleGeneratePath}>Generate&nbsp;Path</button>
             </div>
-        </React.Fragment>
-      )}
-    </div>
+          </>
+        ) : (
+          <>
+            <p>Step {activeStep + 1}</p>
+
+            <div className='navigation-buttons'>
+              <button className='small-btn'
+                color="inherit"
+                disabled={activeStep === 0}
+                onClick={handleBack}
+                sx={{ mr: 1 }}
+              >
+                Back
+              </button>
+
+
+            </div>
+
+
+            {activeStep + 1 === 1 ? (
+              <>
+                <div class="welcome-subtitle">What brings you to illuminate?</div>
+                <div className="q1_option1">A. To learn real life implementation of skills</div>
+                <div className="q1_option2">B. Unsure of what to expect from your new job role</div>
+                <div className="q1_option3">C. Looking for a switch</div>
+                <div className="q1_option4">D. In search of guidance</div>
+              </>
+            ) : activeStep + 1 === 2 ? (
+              <>
+                <div class="welcome-subtitle">Where are you in your career right now?</div>
+                <div className="q2_option1">A. Entry level ( 0-2 years)</div>
+                <div className="q2_option2">B. Mid Level (3-9 years)</div>
+                <div className="q2_option3">C. Senior Level (10+ years)</div>
+
+
+              </>
+            ) : activeStep + 1 === 3 ? (
+              <>
+
+                <div class="welcome-subtitle">What would you like to learn?</div>
+
+                <div className="q3_option1">A. Back-end development</div>
+                <div className="q3_option2">B. Front-end development</div>
+                <div className="q3_option3">C. Mobile Application Development</div>
+                <div className="q3_option4">D. Programming Language</div>
+                <div className="q3_option5">E. Machine Learning</div>
+                <div className="q3_option6">F. Big data management</div>
+                <div className="q3_option7">G. DevOps</div>
+                <div className="q3_option8">H. System Design</div>
+                <div className="q3_option9">I. User Centered Design</div>
+
+              </>
+            ) : activeStep + 1 === 4 ?
+              (
+                <>
+                  <section div class="question4">
+                    <div class="welcome-subtitle">
+                      Back-end frameworks help build the back-end structure of a website. Which framework would you like to learn?
+                    </div>
+                  </section>
+                  <div className="q3_option4">A. Spring Boot</div>
+                  <div className="q3_option5">B. Flask</div>
+                  <div className="q3_option6">C. Django</div>
+                  <div className="q3_option7">D. Node.js</div>
+                  <div className="q3_option8">H. PHP</div>
+                  <div className="q3_option9">I. Ruby on Rails</div>
+
+
+                </>)
+              : activeStep + 1 === 5 ?
+                (
+                  <>
+                    <section div class="question4">
+                      <div class="welcome-subtitle">
+                        Spring Boot is a Java framework for creating production-grade applications and services.
+                        Therefore, it is essential to have a good grip of Java to understand the concepts of Spring Boot.
+                        Would you like a Java refresher before starting Spring Boot?
+                      </div>
+                    </section>
+
+                    <div className="q5_option1">A. Yes</div>
+                    <div className="q5_option2">B. No</div>
+
+
+                  </>
+                )
+                : activeStep + 1 === 6 ?
+                  (
+                    <>
+                      <section div class="question4">
+                        <div class="welcome-subtitle">
+                          You’re almost done. To build your personalized plan, we need to know a little more about you.
+                          What do you intend to achieve from this learning plan?
+                        </div>
+                      </section>
+
+                      <div className="q6_option1">A. Learn the essentials of Spring and Spring Boot so that you can make back-end web applications.</div>
+                      <div className="q6_option2">B. Build stand-alone applications that efficiently manage data handling and storage.</div>
+                      <div className="q6_option3">C. Learn to separate cross-cutting concerns while making modular applications</div>
+                      <div className="q6_option4">D. Learn Java web development using the Model-View-Controller design pattern.</div>
+                      <div className="q6_option5">E. Learn to test Spring and Spring Boot.</div>
+                      <div className="q6_option6">F. Learn to build production-ready applications efficiency.</div>
+                      <div className="q6_option7">G. Become a Spring Boot master who can develop production-ready applications as quickly as possible.</div>
+
+
+                    </>
+                  ) : activeStep + 1 === 7 ? (
+                    <>
+                      <section div class="question7">
+                        <div class="welcome-subtitle">
+                          Set a weekly learning goal.
+                        </div>
+                      </section>
+
+                      <div className="q7_option1">A. Light Schedule
+                        2 Hours per week</div>
+                      <div className="q7_option2">B. Regular Schedule
+                        4 Hours per week</div>
+                      <div className="q7_option3">C. Active Schedule 8 Hours per week</div>
+
+                    </>
+                  )
+                    : (<p>nothing</p>)
+            }
+            <button className='small-btn' onClick={handleNext}>
+              Continue
+            </button>
+          </>
+        )}
+      </div>
     </>);
 }
