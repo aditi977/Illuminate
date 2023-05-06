@@ -1,6 +1,6 @@
 # Backend
 
-To run the backend surver, run the `npm run dev` command after you cd into this folder. This command can be modified in the `package.json` file. 
+To run the backend server, run the `npm run dev` command after you cd into this folder. This command can be modified in the `package.json` file. 
 
 Make sure to add a `config.env` file with the `ATLAS_URI` & `PORT` variables set up prior to starting the backend server.
 
