@@ -9,7 +9,7 @@ import StepLabel from '@mui/material/StepLabel';
 // import Check from '@mui/icons-material/Check';
 import StepConnector, { stepConnectorClasses } from '@mui/material/StepConnector';
 import { Typography } from '@mui/material';
-import close from './close.png';
+import close from './images/close.png';
 import './PPForm.css';
 import Header from '../components/Header';
 import { useNavigate } from "react-router-dom";

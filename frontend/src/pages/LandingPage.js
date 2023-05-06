@@ -1,8 +1,8 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import './LandingPage.css';
-import largeText from './largeText.png';
-import heroImage from './heroImage.png';
+import largeText from './images/largeText.png';
+import heroImage from './images/heroImage.png';
 
 // Define the Home function component
 export default function Home() {

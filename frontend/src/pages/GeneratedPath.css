@@ -1,0 +1,60 @@
+.gp-container {
+    padding: 2em;
+    margin: 5em 8em;
+    border-radius: 20px;
+    background: rgba(38, 50, 56, 0.37);
+    text-align: center;
+}
+
+.close-btn-container {
+    position: relative;
+    float: right;
+    cursor: pointer;
+
+}
+
+.gp-title {
+    color: var(--tertiary-text-color);
+    font-size: 2.06em;
+    font-weight: 500;
+}
+
+.gp-subtitle {
+    color: var(--primary-text-color);
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+.learn-obj-container{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around; 
+    
+}
+
+.learn-obj {
+    text-align: left;
+    line-height: 25.5px;
+    font-size: 17px;
+    font-weight: 500;
+    max-width: 590px;
+}
+
+.gp-shared-goals-img {
+    width: 250px;
+    height: 250px;
+}
+
+.gp-info {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.gp-info > li {
+    padding: 1em;
+}

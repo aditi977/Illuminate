@@ -1,11 +1,11 @@
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import './Welcome.css';
-import close from './close.png';
-import welcomeGrouped from './welcomeGrouped.png';
-import welcomeOne from './welcome1.png';
-import welcomeTwo from './welcome2.png';
-import welcomeThree from './welcome3.png';
+import close from './images/close.png';
+import welcomeGrouped from './images/welcomeGrouped.png';
+import welcomeOne from './images/welcome1.png';
+import welcomeTwo from './images/welcome2.png';
+import welcomeThree from './images/welcome3.png';
 import TextImage from '../components/TextImage';
 
 //welcome page of the website
