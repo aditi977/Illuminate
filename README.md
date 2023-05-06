@@ -2,10 +2,10 @@
 Team Name - Muggles
 
 Team Members- 
- *Aditi Diwan<aditid@vt.edu>*
- *Apoorva Srivastava<apoorva22@vt.edu>*
- *Ayush Roy <ayushroy24@vt.edu >*
- *Varshita Usem <varshitau@vt.edu >*
+ <br>*Aditi Diwan<aditid@vt.edu>*<br>
+ <br>*Apoorva Srivastava<apoorva22@vt.edu>*<br>
+ <br>*Ayush Roy <ayushroy24@vt.edu >*<br>
+ <br>*Varshita Usem <varshitau@vt.edu >*<br>
  
 Project Description
 
