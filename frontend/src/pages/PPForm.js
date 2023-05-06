@@ -14,7 +14,8 @@ import './PPForm.css';
 import Header from '../components/Header';
 import { useNavigate } from "react-router-dom";
 
-const steps = ['', '', '', '', '', '', ''];
+//setting the number of steps
+const steps = ['', '', '', '', '',''];
 
 const CustomConnector = styled(StepConnector)(({ theme }) => ({
   [`&.${stepConnectorClasses.alternativeLabel}`]: {
@@ -62,7 +63,7 @@ const CustomStepIconRoot = styled('div')(({ theme, ownerState }) => ({
     backgroundColor: 'currentColor',
   },
 }));
-
+//returns the tracking element on the top
 function CustomStepIcon(props) {
   const { active, completed, className } = props;
 

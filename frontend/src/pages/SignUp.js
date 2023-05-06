@@ -4,6 +4,7 @@ import arrow from './arrow.png';
 import pictureGrid from './pictureGrid.png';
 import Footer from "../components/Footer";
 
+//returns a signup form in the signup page
 export default function SignUp() {
     return (
         <>
