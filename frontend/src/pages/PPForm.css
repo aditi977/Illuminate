@@ -17,6 +17,7 @@
     color: var(--tertiary-text-color);
     font-size: 1.5em;
     font-weight: 500;
+    padding-top: 40px;
 }
 .q1_option1
 {
@@ -316,16 +317,36 @@ border-radius: 10px;
     padding-top: 30px;
     
 }
-.continue-button{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    /* width: 175px; */
-    /* height: 35px; */
-    /* left: 640px;
-    top: 617px; */
-    justify-content: flex-end;
-}
+.back-btn {
+    background-color: var(--primary-color);
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    position:absolute;
+    left:692px;
+    top:691px;
+    /* width: 166px; */
+    border-radius: 10px;
+    cursor: pointer;
+  }
+.continue-btn {
+    background-color: var(--primary-color);
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    position:absolute;
+    left:664px;
+    top:632px;
+    /* width: 166px; */
+    border-radius: 10px;
+    cursor: pointer;
+  }
 /* [class^='q']:hover, [class*='q']:hover {
     outline: 1px solid var(--primary-text-color);
     cursor:pointer;
