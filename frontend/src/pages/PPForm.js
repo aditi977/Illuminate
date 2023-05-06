@@ -131,7 +131,7 @@ export default function PPForm() {
         {/* If last step, render only back and generate path button, otherwise render back and next */}
         {activeStep === steps.length - 1 ? (
           <>
-            <h2 className='welcome-subtitle'>Done bro</h2>
+            <h2 className='welcome-subtitle'>Click below to generate path!</h2>
             <button className='small-btn'
               color="inherit"
               disabled={activeStep === 0}
@@ -159,17 +159,17 @@ export default function PPForm() {
             {activeStep + 1 === 1 ? (
               <>
                 <div class="welcome-subtitle">What brings you to illuminate?</div>
-                <div className="q1_option1">A. To learn real life implementation of skills</div>
-                <div className="q1_option2">B. Unsure of what to expect from your new job role</div>
-                <div className="q1_option3">C. Looking for a switch</div>
-                <div className="q1_option4">D. In search of guidance</div>
+                <div tabindex="1" className="a q1_option1">A. To learn real life implementation of skills</div>
+                <div tabindex="1" className="a q1_option2">B. Unsure of what to expect from your new job role</div>
+                <div tabindex="1" className="a q1_option3">C. Looking for a switch</div>
+                <div tabindex="1" className="a q1_option4">D. In search of guidance</div>
               </>
             ) : activeStep + 1 === 2 ? (
               <>
                 <div class="welcome-subtitle">Where are you in your career right now?</div>
-                <div className="q2_option1">A. Entry level ( 0-2 years)</div>
-                <div className="q2_option2">B. Mid Level (3-9 years)</div>
-                <div className="q2_option3">C. Senior Level (10+ years)</div>
+                <div tabindex="1" className="a q2_option1">A. Entry level ( 0-2 years)</div>
+                <div tabindex="1" className="a q2_option2">B. Mid Level (3-9 years)</div>
+                <div tabindex="1" className="a q2_option3">C. Senior Level (10+ years)</div>
 
 
               </>
@@ -178,15 +178,15 @@ export default function PPForm() {
 
                 <div class="welcome-subtitle">What would you like to learn?</div>
 
-                <div className="q3_option1">A. Back-end development</div>
-                <div className="q3_option2">B. Front-end development</div>
-                <div className="q3_option3">C. Mobile Application Development</div>
-                <div className="q3_option4">D. Programming Language</div>
-                <div className="q3_option5">E. Machine Learning</div>
-                <div className="q3_option6">F. Big data management</div>
-                <div className="q3_option7">G. DevOps</div>
-                <div className="q3_option8">H. System Design</div>
-                <div className="q3_option9">I. User Centered Design</div>
+                <div tabindex="1" className="a q3_option1" tabindex="1">A. Back-end development</div>
+                <div tabindex="1" className="a q3_option2" tabindex="1">B. Front-end development</div>
+                <div tabindex="1" className="a q3_option3" tabindex="1">C. Mobile Application Development</div>
+                <div tabindex="1" className="a q3_option4" tabindex="1">D. Programming Language</div>
+                <div tabindex="1" className="a q3_option5" tabindex="1">E. Machine Learning</div>
+                <div tabindex="1" className="a q3_option6" tabindex="1">F. Big data management</div>
+                <div tabindex="1" className="a q3_option7" tabindex="1">G. DevOps</div>
+                <div tabindex="1" className="a q3_option8" tabindex="1">H. System Design</div>
+                <div tabindex="1" className="a q3_option9" tabindex="1">I. User Centered Design</div>
 
               </>
             ) : activeStep + 1 === 4 ?
@@ -197,12 +197,12 @@ export default function PPForm() {
                       Back-end frameworks help build the back-end structure of a website. Which framework would you like to learn?
                     </div>
                   </section>
-                  <div className="q3_option4">A. Spring Boot</div>
-                  <div className="q3_option5">B. Flask</div>
-                  <div className="q3_option6">C. Django</div>
-                  <div className="q3_option7">D. Node.js</div>
-                  <div className="q3_option8">H. PHP</div>
-                  <div className="q3_option9">I. Ruby on Rails</div>
+                  <div tabindex="1" className="a q3_option4">A. Spring Boot</div>
+                  <div tabindex="1" className="a q3_option5">B. Flask</div>
+                  <div tabindex="1" className="a q3_option6">C. Django</div>
+                  <div tabindex="1" className="a q3_option7">D. Node.js</div>
+                  <div tabindex="1" className="a q3_option8">H. PHP</div>
+                  <div tabindex="1" className="a q3_option9">I. Ruby on Rails</div>
 
 
                 </>)
@@ -217,8 +217,8 @@ export default function PPForm() {
                       </div>
                     </section>
 
-                    <div className="q5_option1">A. Yes</div>
-                    <div className="q5_option2">B. No</div>
+                    <div tabindex="1" className="a q5_option1">A. Yes</div>
+                    <div tabindex="1" className="a q5_option2">B. No</div>
 
 
                   </>
@@ -233,13 +233,13 @@ export default function PPForm() {
                         </div>
                       </section>
 
-                      <div className="q6_option1">A. Learn the essentials of Spring and Spring Boot so that you can make back-end web applications.</div>
-                      <div className="q6_option2">B. Build stand-alone applications that efficiently manage data handling and storage.</div>
-                      <div className="q6_option3">C. Learn to separate cross-cutting concerns while making modular applications</div>
-                      <div className="q6_option4">D. Learn Java web development using the Model-View-Controller design pattern.</div>
-                      <div className="q6_option5">E. Learn to test Spring and Spring Boot.</div>
-                      <div className="q6_option6">F. Learn to build production-ready applications efficiency.</div>
-                      <div className="q6_option7">G. Become a Spring Boot master who can develop production-ready applications as quickly as possible.</div>
+                      <div tabindex="1" className="a q6_option1">A. Learn the essentials of Spring and Spring Boot so that you can make back-end web applications.</div>
+                      <div tabindex="1" className="a q6_option2">B. Build stand-alone applications that efficiently manage data handling and storage.</div>
+                      <div tabindex="1" className="a q6_option3">C. Learn to separate cross-cutting concerns while making modular applications</div>
+                      <div tabindex="1" className="a q6_option4">D. Learn Java web development using the Model-View-Controller design pattern.</div>
+                      <div tabindex="1" className="a q6_option5">E. Learn to test Spring and Spring Boot.</div>
+                      <div tabindex="1" className="a q6_option6">F. Learn to build production-ready applications efficiency.</div>
+                      <div tabindex="1" className="a q6_option7">G. Become a Spring Boot master who can develop production-ready applications as quickly as possible.</div>
 
 
                     </>
@@ -251,11 +251,11 @@ export default function PPForm() {
                         </div>
                       </section>
 
-                      <div className="q7_option1">A. Light Schedule
+                      <div tabindex="1" className="a q7_option1">A. Light Schedule
                         2 Hours per week</div>
-                      <div className="q7_option2">B. Regular Schedule
+                      <div tabindex="1" className="a q7_option2">B. Regular Schedule
                         4 Hours per week</div>
-                      <div className="q7_option3">C. Active Schedule 8 Hours per week</div>
+                      <div tabindex="1" className="a q7_option3">C. Active Schedule 8 Hours per week</div>
 
                     </>
                   )

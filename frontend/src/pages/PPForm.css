@@ -347,10 +347,17 @@ border-radius: 10px;
     border-radius: 10px;
     cursor: pointer;
   }
-/* [class^='q']:hover, [class*='q']:hover {
+.a:hover {
     outline: 1px solid var(--primary-text-color);
+    
+}
+.a {
     cursor:pointer;
-} */
+}
+
+.a:visited, .a:focus {
+    background-color: var(--primary-color);
+}
 
 .navigation-buttons{
     display: flex;
