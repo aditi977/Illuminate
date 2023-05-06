@@ -18,5 +18,5 @@
 - Helps build your profile for your industry 
 - Mentor guidance and support throughout your journey and beyond.
 
-### Link for Figma : (<https://www.figma.com/file/XXI1vwZ1uY5NVspMBM9Tft/Illuminate?type=design&node-id=403%3A2&t=pYbiVyVmrlwuCefN-1>)
+Link for Figma : (<https://www.figma.com/file/XXI1vwZ1uY5NVspMBM9Tft/Illuminate?type=design&node-id=403%3A2&t=pYbiVyVmrlwuCefN-1>)
 
