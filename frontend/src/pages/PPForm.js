@@ -147,17 +147,10 @@ export default function PPForm() {
           </>
         ) : (
           <>
-            <p>Step {activeStep + 1}</p>
+           
 
             <div className='navigation-buttons'>
-              <button className='small-btn'
-                color="inherit"
-                disabled={activeStep === 0}
-                onClick={handleBack}
-                sx={{ mr: 1 }}
-              >
-                Back
-              </button>
+             
 
 
             </div>
@@ -268,9 +261,19 @@ export default function PPForm() {
                   )
                     : (<p>nothing</p>)
             }
-            <button className='small-btn' onClick={handleNext}>
+           
+            <button className='continue-btn' onClick={handleNext}>
               Continue
             </button>
+            <button className='back-btn'
+              color="inherit"
+              disabled={activeStep === 0}
+              onClick={handleBack}
+              sx={{ mr: 1 }}
+            >
+              Back
+            </button>
+           
           </>
         )}
       </div>
