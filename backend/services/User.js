@@ -16,9 +16,9 @@ class User extends Base {
     }
 
     async perform() {
-        console.log(`******* ${this.operation} *****`)
+        // console.log(`******* ${this.operation} *****`)
         switch (this.operation) {
-            case "signUp": await this.signUp(); break;
+            case "signUp": const user = await this.signUp(); return user;
             case "signIn": const token = await this.signIn(); return token;
             default: throw new Error("Invalid Operation")
         }
