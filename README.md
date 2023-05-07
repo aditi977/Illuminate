@@ -53,5 +53,6 @@ Link for Figma : (<https://www.figma.com/file/XXI1vwZ1uY5NVspMBM9Tft/Illuminate?
 17. Step 17- The user clicks 'Generate Path'
 18. Step 18 - The personalised course for the user is generated.
 
-#### expected behavior of the system
+#### Expected behavior of the system
+
 
