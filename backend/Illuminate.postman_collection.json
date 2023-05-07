@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "3b5d4b7a-ffb0-445c-91cd-62731416eedd",
+		"name": "Illuminate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18008386"
+	},
+	"item": [
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"FirstName LastName\",\n    \"password\": \"password\",\n    \"email\": \"user@email.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/v1/sign-up",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"v1",
+						"sign-up"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign-In",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"password\": \"password\",\n    \"email\": \"user@email.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/api/v1/sign-in",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"api",
+						"v1",
+						"sign-in"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

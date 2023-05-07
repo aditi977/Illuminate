@@ -17,6 +17,30 @@ test('renders join login link', () => {
 });
 
 
+test('renders copyright text', () => {
+  render(<Footer />);
+  const linkElement = screen.getByText(/Copyright@2023 Illuminate,Inc/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+test('does not renders copyright without yer text', () => {
+  render(<Footer />);
+  const linkElement = screen.queryByText(/Copyright Illuminate,Inc/i);
+=======
+
+test('renders join for free link', () => {
+  render(<Header />);
+  const linkElement = screen.getByText(/Join for Free/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+test('renders join login link', () => {
+  render(<Header />);
+  const linkElement = screen.getByText(/login/i);
+  expect(linkElement).toBeInTheDocument();
+});
+
+
 test('does not render join login link when logged in', () => {
   render(<Header isLoggedIn={true} />);
   const linkElement = screen.queryByText(/login/i);
@@ -71,14 +95,3 @@ test('does not renders copyright without year text', () => {
   const linkElement = screen.queryByText(/Copyright@ Illuminate,Inc/i);
   expect(linkElement).not.toBeInTheDocument();
 });
-
-
-
-
-
-
-
-
-
-
-
