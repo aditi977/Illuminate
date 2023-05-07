@@ -31,3 +31,8 @@ Link for Figma : (<https://www.figma.com/file/XXI1vwZ1uY5NVspMBM9Tft/Illuminate?
 - [S3]Give input by selecting options popping on the screens and generate a path to cater to their needs.
 #### Alternative Flows 
 [E1] Skips and goes directly to the home page.
+
+#### Specific instructions to execute and the expected behavior of the system? 
+
+
+
