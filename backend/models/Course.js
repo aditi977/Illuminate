@@ -1,11 +1,8 @@
 const Model = require('./index');
-const bcrypt = require('bcrypt');
-const jwt = require('jsonwebtoken');
-const salt = 10
 
-class User extends Model {
+class Course extends Model {
     static get tableName() {
-        return "users";
+        return "courses";
     }
 
     static get idColumn() {
@@ -19,42 +16,41 @@ class User extends Model {
     //     }
     // }
 
-    async verifyPassword({ password = '' } = {}) {
-        const verified = await bcrypt.compare(password, this.password);
-        console.log(verified)
-        return verified;
-    }
-
-    generateJwt() {
-        return jwt.sign({ id: this.id }, process.env.JWT_SECRET);
-    }
-
     static get relationMappings() {
-        const Course = require('./Course');
-        const UserCourse = require('./UserCourse');
+        const User = require('./User');
+        const Module = require('./Module');
         return {
-            createdCourses: {
-                relation: Model.HasManyRelation,
-                modelClass: Course,
+            creator: {
+                relation: Model.BelongsToOneRelation,
+                modelClass: User,
                 join: {
-                    from: `${this.tableName}.id`,
-                    to: `${Course.tableName}.creator`
+                    from: `${this.tableName}.createdBy`,
+                    to: `${User.tableName}.id`,
                 },
             },
-            registeredCourses: {
+            modules: {
+                relation: Model.HasManyRelation,
+                modelClass: Module,
+                join: {
+                    from: `${this.tableName}.id`,
+                    to: `${Module.tableName}.courseId`,
+                },
+            },
+            registeredUsers: {
                 relation: Model.ManyToManyRelation,
                 modelClass: Course,
                 join: {
                     from: `${this.tableName}.id`,
                     through: { // join table relationship mapping
-                        from: `${UserCourse.tableName}.userId`,
-                        to: `${UserCourse.tableName}.courseId`,
+                        from: `${UserCourse.tableName}.courseId`,
+                        to: `${UserCourse.tableName}.userId`,
                     },
-                    to: `${Course.tableName}.id`,
+                    to: `${User.tableName}.id`,
                 },
             },
         }
     }
+
 }
 
-module.exports = exports = User;
+module.exports = exports = Course;
