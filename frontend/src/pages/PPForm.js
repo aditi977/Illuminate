@@ -178,15 +178,15 @@ export default function PPForm() {
 
                 <div class="welcome-subtitle">What would you like to learn?</div>
 
-                <div tabindex="1" className="a q3_option1" tabindex="1">A. Back-end development</div>
-                <div tabindex="1" className="a q3_option2" tabindex="1">B. Front-end development</div>
-                <div tabindex="1" className="a q3_option3" tabindex="1">C. Mobile Application Development</div>
-                <div tabindex="1" className="a q3_option4" tabindex="1">D. Programming Language</div>
-                <div tabindex="1" className="a q3_option5" tabindex="1">E. Machine Learning</div>
-                <div tabindex="1" className="a q3_option6" tabindex="1">F. Big data management</div>
-                <div tabindex="1" className="a q3_option7" tabindex="1">G. DevOps</div>
-                <div tabindex="1" className="a q3_option8" tabindex="1">H. System Design</div>
-                <div tabindex="1" className="a q3_option9" tabindex="1">I. User Centered Design</div>
+                <div tabindex="1" className="a q3_option1" >A. Back-end development</div>
+                <div tabindex="1" className="a q3_option2" >B. Front-end development</div>
+                <div tabindex="1" className="a q3_option3" >C. Mobile Application Development</div>
+                <div tabindex="1" className="a q3_option4" >D. Programming Language</div>
+                <div tabindex="1" className="a q3_option5" >E. Machine Learning</div>
+                <div tabindex="1" className="a q3_option6" >F. Big data management</div>
+                <div tabindex="1" className="a q3_option7" >G. DevOps</div>
+                <div tabindex="1" className="a q3_option8" >H. System Design</div>
+                <div tabindex="1" className="a q3_option9" >I. User Centered Design</div>
 
               </>
             ) : activeStep + 1 === 4 ?
