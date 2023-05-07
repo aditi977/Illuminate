@@ -32,7 +32,26 @@ Link for Figma : (<https://www.figma.com/file/XXI1vwZ1uY5NVspMBM9Tft/Illuminate?
 #### Alternative Flows 
 [E1] Skips and goes directly to the home page.
 
-#### Specific instructions to execute and the expected behavior of the system? 
+#### Specific instructions to execute  
 
+Step 1 - The user selects 'Let's Go' button the Welcome page.
+Step 2 - The user lands on the 'What brings you to illuminate?' page.
+Step 3 - The user selectes the option 'A. To learn real life implementation of skills'
+Step 4 - The user clicks on continue button
+Step 5 - The user lands on 'Where are you in your career right now?' page
+Step 6 - The user selectes the option 'A. Entry level ( 0-2 years)'
+Step 7 - The user clicks on continue button
+Step 8 - The user lands on 'What would you like to learn?' page
+Step 9 - The user selectes the option 'A. Back-end development'
+Step 10 -The user clicks on continue button
+Step 11 - The user lands on 'Back-end frameworks help build the back-end structure of a website. Which framework would you like to learn?' page
+Step 12 - The user selectes the option 'A. Spring Boot'
+Step 13 - The user clicks on continue button
+Step 14 - The user lands on 'Spring Boot is a Java framework for creating production-grade applications and services. Therefore, it is essential to have a good grip of Java to understand the concepts of Spring Boot. Would you like a Java refresher before starting Spring Boot?' page
+Step 15 - The user selects'Yes'
+Step 16- The user lands on generate path page
+Step 17- The user clicks 'Generate Path'
+Step 18 - The personalised course for the user is generated.
 
+#### expected behavior of the system
 
