@@ -20,13 +20,14 @@
 
 Link for Figma : (<https://www.figma.com/file/XXI1vwZ1uY5NVspMBM9Tft/Illuminate?type=design&node-id=403%3A2&t=pYbiVyVmrlwuCefN-1>)
 
+### Use Case: Generating personalised path for learning real-time implementation of skills
 #### Preconditions 
-The user is on the Illuminate landing page
+- The user is on the Illuminate landing page
 #### Main Flow 
-The user signs up [S1]. The user will select the ‘Let’s go’ option on the welcome page[S2]. Follow the steps to create their personalized path[S3]. 
+- The user signs up [S1]. The user will select the ‘Let’s go’ option on the welcome page[S2]. Follow the steps to create their personalized path[S3]. 
 #### Subflows 
-[S1] User provides @username,@useremail,@createpassword. 
-[S2]Options with why they are here page will pop up, and they can begin the journey toward their personalized path.
-[S3]Give input by selecting options popping on the screens and generate a path to cater to their needs.
+- [S1] User provides @username,@useremail,@createpassword. 
+- [S2]Options with why they are here page will pop up, and they can begin the journey toward their personalized path.
+- [S3]Give input by selecting options popping on the screens and generate a path to cater to their needs.
 #### Alternative Flows 
 [E1] Skips and goes directly to the home page.
