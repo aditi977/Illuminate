@@ -1,41 +1,34 @@
-.sign-up {
-    /* padding-top: 3em; */
-    margin: 0;
-}
 
-.top-img{
-    /* background-color: #136F63; */
-    border: 1px solid var(--primary-text-color);
-    padding: 10em;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-}
-
-.bottom-img {
-    /* background-color: #136F63; */
-    border: 1px solid var(--primary-text-color);
-    padding: 10em;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-.sign-up-form{
-    background-color: var(--bg-color);
-    z-index: 100;
-    border: 1px solid var(--primary-text-color);
-    position: absolute;
-    top: 25vh;
-    left: 5em;
+.sign-up-container {
     display: flex;
-    padding: 2em;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+
+/* .sign-up {
+    display: inline-block;
+} */
+.sign-up-form{
+    background-color: #FFFFFF;
+    /* z-index: 100; */
+    border: 1px solid var(--primary-text-color);
+    /* position: absolute; */
+    /* top: 25vh; */
+    /* left: 5em; */
+    padding: 35px 76px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 20px;
-    min-height: 60vh;
+    align-items: center;
+    border-radius: 10%;
+    max-height: 450px;
+    max-width: 450px;
 }
+
 
 /* .sign-up-form > *, label > *, button {
     color: var(--bg-color) !important;
@@ -45,6 +38,60 @@ input{
     background-color: var(--primary-text-color);
 }
 
-.sign-up-form > label {
-    padding: 1em 0;
+.sign-up-form > input {
+    margin: 1em 0;
+}
+.sign-up-form h1{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 1.25em;
+line-height: 30px;
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: var(--bg-color);
+}
+
+
+
+.sign-up-form input{
+    width: 100%;
+    min-height: 40px;
+    background: #D9D9D9;
+    border-radius: 5px;
+    color: var(--bg-color);
+    margin: 1em 0;
+}
+
+.signupbtn{
+    font-weight: bold;
+    background: #BD79FF;
+    border-radius: 5px;
+    padding: 0.2em 1.4em;
+    font-size: 1.1em;
+    cursor: pointer;
+    margin-top: 1em;
+}
+/*input[type=password]
+{
+    position: absolute;
+    width: 300px;
+    height: 40px;
+    left: 74px;
+    top: 170px;
+    background: #D9D9D9;
+    border-radius: 5px;
+}*/
+
+/* .pictureGrid {
+    display: inline-block;
+    justify-content: space-between;
+} */
+
+.sign-up-container img {
+    max-height: 90vh;
+    max-width: 60vw;
 }

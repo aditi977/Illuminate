@@ -1,9 +1,19 @@
 :root {
   --bg-color: #1E1E1E;
-  --secondary-text-color: #BD79FF;
-  --primary-color: #BD79FF;
   --primary-text-color: #FFF;
-  --body-text-size: 20;
+  --secondary-text-color: #BD79FF;
+  --tertiary-text-color: #49DA85;
+  --primary-color: #BD79FF;
+  
+  --body-text-size: 16px;
+}
+
+/* TODO: standardize across screen sizes */
+@media only screen and (max-width: 600px){
+:root{
+  --body-text-size: 10px;
+}
+
 }
 
 a {
@@ -11,13 +21,58 @@ a {
   color: var(--primary-text-color);
 }
 
+.cta-btn{
+  background-color: var(--primary-color);
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: calc(var(--body-text-size)*1.5);
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+  width: 276px;
+  margin-top: 32px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 27.5px;
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+  width: 276px;
+  margin-top: 32px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.small-btn {
+  background-color: var(--primary-color);
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 25px;
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+  /* width: 166px; */
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+
 
 * {
   margin: 0;
   box-sizing: border-box;
   font-size: var(--body-text-size);
   color: var(--primary-text-color);
+  border: none;
 }
+
 
 
 body {

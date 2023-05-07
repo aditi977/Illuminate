@@ -1,43 +1,38 @@
 import Header from "../components/Header";
 import './SignUp.css';
+import arrow from './images/arrow.png';
+import pictureGrid from './images/pictureGrid.png';
+import Footer from "../components/Footer";
 
+//returns a signup form in the signup page
 export default function SignUp() {
     return (
         <>
-            <Header />
-            <div className='sign-up'>
-                <div className='top-img'></div>
-         
-                    <form>
-                        <div class="sign-up-form">
-                            <h1>Sign Up</h1>
-                            <p>Please fill in this form to create an account.</p>
-                            <hr />
+            <Header isLoggedIn={false}/>
 
-                            <label for="email"><b>Email</b></label>
-                            <input type="text" placeholder="Enter Email" name="email" required />
+            <div className='sign-up-container'>
+                {/* <div className='sign-up'> */}
 
-                            <label for="psw"><b>Password</b></label>
-                            <input type="password" placeholder="Enter Password" name="psw" required />
+                    <form class="sign-up-form">
+                            <h1><a href='/'><img src={arrow} /></a>&nbsp;&nbsp;Start your journey today!</h1>
 
-                            <label for="psw-repeat"><b>Repeat Password</b></label>
-                            <input type="password" placeholder="Repeat Password" name="psw-repeat" required />
+                            <input type="text" placeholder="  Name" name="name" required />
 
-                            <label>
-                                <input type="checkbox" checked="checked" name="remember" style={{marginBottom: '15px'}} /> Remember me
-                            </label>
+                            <input type="text" placeholder="  Email" name="email" required />
 
-                            <p>By creating an account you agree to our <a href="#" style={{color:"dodgerblue"}}>Terms & Privacy</a>.</p>
+                            <input type="password" placeholder="  New Password" name="psw" required />
 
-                            <div class="clearfix">
-                                <button type="button" class="cancelbtn">Cancel</button>
-                                <button type="submit" class="signupbtn">Sign Up</button>
+                            <input type="password" placeholder="  Re-enter new Password" name="psw-repeat" required />
+
+                            <div>
+                               <a href="/welcome" class="signupbtn">Submit</a>
                             </div>
-                        </div>
                     </form>
-         
-                <div className='bottom-img'></div>
+                {/* </div> */}
+                <img src={pictureGrid}/>
             </div>
+
+            <Footer />
         </>
 
 

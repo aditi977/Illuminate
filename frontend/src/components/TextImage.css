@@ -1,0 +1,41 @@
+.text-image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 250px;
+    vertical-align: top;
+}
+
+.text-image-container img {
+    max-width: 250px;
+}
+
+.text-image-text-container {
+    font-size: 1.06em;
+    font-weight: 500;
+    margin-top: 1em;
+}
+
+.subtitle-container {
+    margin-top: 1em;
+    padding: 5px;
+    vertical-align: center;
+    height: 70px;
+    border-radius: 20px;
+    background: rgba(38, 50, 56, 0.37);
+    text-align: center;
+    align-items: center;
+
+}
+
+.subtitle-container h2 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--secondary-text-color);
+}
+
+
+
+/* .text-img-text {
+    
+} */
