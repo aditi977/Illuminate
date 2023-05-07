@@ -106,7 +106,7 @@ export default function PPForm() {
 
   const handleGeneratePath = () => {
     setActiveStep(0);
-    let path = `/welcome`; 
+    let path = `/genpath`; 
       navigate(path);
   };
 
