@@ -55,4 +55,4 @@ Link for Figma : (<https://www.figma.com/file/XXI1vwZ1uY5NVspMBM9Tft/Illuminate?
 
 #### Expected behavior of the system
 
-
+The user is supposed to get a personalised set of courses based on recorded inputs.
