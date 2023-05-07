@@ -34,24 +34,24 @@ Link for Figma : (<https://www.figma.com/file/XXI1vwZ1uY5NVspMBM9Tft/Illuminate?
 
 #### Specific instructions to execute  
 
-Step 1 - The user selects 'Let's Go' button the Welcome page.
-Step 2 - The user lands on the 'What brings you to illuminate?' page.
-Step 3 - The user selectes the option 'A. To learn real life implementation of skills'
-Step 4 - The user clicks on continue button
-Step 5 - The user lands on 'Where are you in your career right now?' page
-Step 6 - The user selectes the option 'A. Entry level ( 0-2 years)'
-Step 7 - The user clicks on continue button
-Step 8 - The user lands on 'What would you like to learn?' page
-Step 9 - The user selectes the option 'A. Back-end development'
-Step 10 -The user clicks on continue button
-Step 11 - The user lands on 'Back-end frameworks help build the back-end structure of a website. Which framework would you like to learn?' page
-Step 12 - The user selectes the option 'A. Spring Boot'
-Step 13 - The user clicks on continue button
-Step 14 - The user lands on 'Spring Boot is a Java framework for creating production-grade applications and services. Therefore, it is essential to have a good grip of Java to understand the concepts of Spring Boot. Would you like a Java refresher before starting Spring Boot?' page
-Step 15 - The user selects'Yes'
-Step 16- The user lands on generate path page
-Step 17- The user clicks 'Generate Path'
-Step 18 - The personalised course for the user is generated.
+1. Step 1 - The user selects 'Let's Go' button the Welcome page.
+2.  Step 2 - The user lands on the 'What brings you to illuminate?' page.
+3. Step 3 - The user selectes the option 'A. To learn real life implementation of skills'
+4. Step 4 - The user clicks on continue button
+5. Step 5 - The user lands on 'Where are you in your career right now?' page
+6. Step 6 - The user selectes the option 'A. Entry level ( 0-2 years)'
+7. Step 7 - The user clicks on continue button
+8. Step 8 - The user lands on 'What would you like to learn?' page
+9. Step 9 - The user selectes the option 'A. Back-end development'
+10. Step 10 -The user clicks on continue button
+11. Step 11 - The user lands on 'Back-end frameworks help build the back-end structure of a website. Which framework would you like to learn?' page
+12. Step 12 - The user selectes the option 'A. Spring Boot'
+13. Step 13 - The user clicks on continue button
+14. Step 14 - The user lands on 'Spring Boot is a Java framework for creating production-grade applications and services. Therefore, it is essential to have a good grip of Java to understand the concepts of Spring Boot. Would you like a Java refresher before starting Spring Boot?' page
+15. Step 15 - The user selects'Yes'
+16. Step 16- The user lands on generate path page
+17. Step 17- The user clicks 'Generate Path'
+18. Step 18 - The personalised course for the user is generated.
 
 #### expected behavior of the system
 
